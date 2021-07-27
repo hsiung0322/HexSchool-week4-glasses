@@ -1,0 +1,24 @@
+//font-size
+$font-size-base: 1rem; //16px
+$h1-font-size: $font-size-base * 4; //64px
+$h2-font-size: $font-size-base * 3; //48px
+$h3-font-size: $font-size-base * 2.25; //36px
+$h4-font-size: $font-size-base * 1.5; //24px
+$h5-font-size: $font-size-base * 1.25; //20px
+$h6-font-size: $font-size-base; //16px
+$font-size-lg: 4.5rem; //72px
+$font-size-m: 2rem; //32px
+$font-size-sm: .875rem; //14px
+//line-height
+$line-height-base: 1.5;
+//color
+$red: #AA0601; //bg-primary
+$white :#FFF;
+$brown: #650300; //text-primary , btn-hover
+$pink: #FBF2F2; //背景粉
+$black: #000;
+$black-300: #212529;
+$gray: #707070;
+//grid
+$pad: 992px;
+$mobile: 767px;

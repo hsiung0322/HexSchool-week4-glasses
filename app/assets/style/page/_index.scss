@@ -1,0 +1,342 @@
+.home{
+    .banner{
+        background-image: url("../images/banner.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 840px;
+        @include mobile{
+            background-image: url("../images/banner-sm.png");
+            height: 394px;
+        }
+        .container{
+            height: 100%;
+        }
+    }
+    .slogan{
+        font-size: $h1-font-size;
+        span{
+            display: block;
+            font-size: $h3-font-size;
+        }
+        @include pad{
+            font-size: $h2-font-size;
+            span{
+                font-size: $h5-font-size;
+            }
+        }
+        @include mobile{
+            font-size: $font-size-m;
+            span{
+                font-size: $font-size-base;
+            }
+        }
+    }
+    .title{
+        font-size: $h2-font-size;
+    }
+    //service
+    .service{
+        padding-top: 60px;
+        padding-bottom: 80px;
+        @include pad{
+            padding-top: 40px;
+            padding-bottom: 24px;
+        }
+        @include mobile{
+            padding-top: 32px;
+            padding-bottom: 8px;
+        }
+        .title{
+            margin-bottom: 40px;
+            @include pad{
+                font-size: $font-size-m;
+                margin-bottom: 32px;
+            }
+            @include mobile{
+                font-size: $h4-font-size;
+                margin-bottom: 20px;
+            }
+        }
+        .list-item{
+            width: 23%;
+            @include pad{
+                width: 37%;
+                margin-bottom: 32px;
+            }
+            @include mobile{
+                width: 74%;
+                margin-bottom: 32px;
+            }
+            .icon{
+                font-size: 100px;
+                margin-bottom: 16px;
+            }
+            .name{
+                font-size: $h4-font-size;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    //series
+    .series{
+        padding-top: 60px;
+        padding-bottom: 80px;
+        @include pad{
+            padding-top: 40px;
+            padding-bottom: 48px;
+        }
+        @include mobile{
+            padding: 32px 0;
+        }
+        .title{
+            margin-bottom: 40px;
+            @include pad{
+                margin-bottom: 32px;
+                font-size: $font-size-m;
+            }
+            @include mobile{
+                margin-bottom: 20px;
+                font-size: $h5-font-size;
+            }
+        }
+        .list-item{
+            margin-bottom: 32px;
+            position: relative;
+            @include pad{
+                margin-bottom: 8px;
+            }
+            img{
+                width: 57%;
+                @include mobile{
+                    width: 100%;
+                }
+            }
+            .content{
+                width: 40%;
+                font-size: $h2-font-size;
+                @include pad{
+                    font-size: 28px;
+                    line-height: 72px;
+                }
+                @include mobile{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .icon{
+                font-size: $h2-font-size;
+                margin-right: 8px;
+                @include pad{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    //design
+    .design{
+        background-image: url("../images/bg.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 705px;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        @include pad{
+            height: 452px;
+            padding-top: 40px;
+            padding-bottom: 56px;
+        }
+        @include mobile{
+            height: 719px;
+            padding-top: 32px;
+            padding-bottom: 40px;
+        }
+        .title{
+            margin-bottom: 40px;
+            @include pad{
+                font-size: $font-size-m;
+                margin-bottom: 32px;
+            }
+            @include mobile{
+                font-size: $h5-font-size;
+                margin-bottom: 20px;
+            }
+        }
+        .list-item{
+            background-color: $white;
+            width: 48%;
+            position: relative;
+            @include mobile{
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            img{
+                opacity: 0.5;
+            }
+            h3{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                text-align: center;
+                font-size: $font-size-lg;
+                @include pad{
+                    font-size: $font-size-m;
+                }
+            }
+        }
+    }
+    //customer
+    .customer{
+        padding-top: 60px;
+        padding-bottom: 80px;
+        @include pad{
+            padding-top: 40px;
+            padding-bottom: 24px;
+        }
+        @include mobile{
+            padding-top: 32px;
+        }
+        .title{
+            margin-bottom: 40px;
+            @include pad{
+                font-size: $font-size-m;
+                margin-bottom: 32px;
+            }
+            @include mobile{
+                font-size: $h5-font-size;
+                margin-bottom: 20px;
+            }
+        }
+        .card{
+            width: 23%;
+            box-shadow: 0px 2px 6px #00000029;
+            border-radius: 4px;
+            border: 1px solid #DEE2E6;
+            @include pad{
+                width: 47.8%;
+                margin-bottom: 32px;
+            }
+            @include mobile{
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            img{
+                border-radius: 4px 4px 0px 0px;
+                width: 100%;
+                height: 256px;
+                object-fit: cover;
+            }
+            &-body{
+                height: 204px;
+                padding: 16px;
+                @include pad{
+                    padding: 16px 24px;
+                }
+            }
+            .name, .date{
+                font-size: $font-size-sm;
+            }
+            .name{
+                margin-bottom: 8px;
+            }
+        }
+    }
+    //contact
+    .contact{
+        padding-top: 60px;
+        padding-bottom: 80px;
+        @include pad{
+            padding-top: 40px;
+            padding-bottom: 56px;
+        }
+        @include mobile{
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+        .content{
+            width: 65.8%;
+            @include mobile{
+                width: 100%;
+            }
+        }
+        .title{
+            margin-bottom: 24px;
+            @include pad{
+                font-size: $font-size-m;
+                margin-bottom: 32px;
+            }
+            @include mobile{
+                font-size: $h5-font-size;
+                margin-bottom: 20px;
+            }
+        }
+        .description{
+            font-size: $h5-font-size;
+            margin-bottom: 20px;
+            @include pad{
+                font-size: $font-size-base;
+                margin-bottom: 16px;
+            }
+        }
+        .input-item{
+            margin-bottom: 16px;
+            @include pad{
+                font-size: $font-size-sm;
+                margin-bottom: 8px;
+            }
+            input{
+                width: 100%;
+                height: 50px;
+                padding: 16px;
+                background: none;
+                border-width: 1px;
+                @include pad{
+                    height: 36px;
+                }
+            }
+            textarea{
+                width: 100%;
+                height: 136px;
+                padding: 12px 16px;
+                background: none;
+                @include pad{
+                    height: 100px;
+                }
+            }
+        }
+        .checkbox-item{
+            margin-bottom: 40px;
+            @include pad{
+                font-size: $font-size-sm;
+                margin-bottom: 20px;
+            }
+            input{
+                @include size(16px, 16px);
+                margin: 4px;
+                @include pad{
+                    @include size(10px, 10px);
+                }
+            }
+        }
+        .btn-item{
+            @include pad{
+                font-size: $font-size-sm;
+            }
+        }
+        .submit-btn{
+            width: 48%;
+            padding: 16px 0;
+            cursor: pointer;
+            @include pad{
+                padding: 10px 0;
+            }
+            @include mobile{
+                padding: 8px 0;
+            }
+        }
+    }
+}

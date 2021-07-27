@@ -1,0 +1,27 @@
+@mixin pc(){
+    @media(min-width: 992px){
+        @content;
+    }
+}
+@mixin pad(){
+    @media (max-width: $pad){
+        @content;
+    }
+}
+@mixin mobile(){
+    @media (max-width: $mobile){
+        @content;
+    }
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @include pad(){
+        max-width: 720px;
+    }
+    @include mobile(){
+        max-width: 375px;
+    }
+}

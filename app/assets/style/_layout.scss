@@ -1,0 +1,149 @@
+.header{
+    padding: 30px 88px;
+    @include pad{
+        padding-right: 39px;
+        padding-left: 39px;
+    }
+    @include mobile{
+        padding: 0;
+    }
+    .menu{
+        @include mobile{
+            width: 100%;
+        }
+    }
+    .menu-item{
+        margin-left: 64px;
+        @include pad{
+            margin-left: 40px;
+        }
+        @include mobile{
+            width: 50%;
+            margin: 0;
+            text-align: center;
+            border-top: 1px solid $white;
+        }
+    }
+}
+.logo{
+    @include mobile{
+        padding: 10px 0;
+    }
+}
+.logo a{
+    display: block;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    @include size(80px, 49px);
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    @include mobile{
+        background-image: url("../images/logo-sm.png");
+        @include size(48px, 30px);
+    }
+    &:hover{
+        opacity: 0.5;
+    }
+}
+
+.footer{
+    padding-top: 32px;
+    padding-bottom: 39px;
+    @include pad{
+        padding-bottom: 20px;
+    }
+    .links{
+        margin-bottom: 24px;
+    }
+    .menu-item{
+        margin-right: 48px;
+        @include pad{
+            margin-right: 40px;
+        }
+    }
+    .social-item{
+        margin-left: 32px;
+        @include pad{
+            margin-left: 24px;
+            img{
+                @include size(24px, 24px);
+            }
+        }
+        a:hover{
+            opacity: 0.5;
+        }
+    }
+    .list{
+        color: $white;
+        margin-bottom: 32px;
+        @include mobile{
+            margin-bottom: 0;
+        }
+        &-item{
+            margin-bottom: 16px;
+            @include pad{
+                margin-bottom: 12px;
+            }
+            i{
+                font-size: $h2-font-size;
+                margin-right: 16px;
+                @include pad{
+                    font-size: $h4-font-size;
+                    margin-right: 10px;
+                }
+            }
+            a{
+                font-size: $h3-font-size;
+                color: $white;
+                @include pad{
+                    font-size: $h5-font-size;
+                }
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .links, .contact{
+        @include mobile{
+            display: none;
+        }
+    }
+    .links-sm{
+        display: none;
+        @include mobile{
+            display: flex;
+            margin-bottom: 16px;
+            .list-item{
+                i{
+                    font-size: $h5-font-size;
+                    margin-right: 5px;
+                }
+                a{
+                    font-size: $font-size-base;
+                }
+            }
+        }
+    }
+    .copyright p{
+        @include mobile{
+            font-size: $font-size-sm;
+            margin-bottom: 8px;
+        }
+    }
+    .copyright-list li{
+        margin-left: 48px;
+        @include mobile{
+            margin-left: 0;
+            margin-bottom: 8px;
+        }
+        a{
+            font-size: $font-size-sm;
+            color: $white;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+}
