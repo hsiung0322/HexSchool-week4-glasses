@@ -12,13 +12,16 @@ $font-size-sm: .875rem; //14px
 //line-height
 $line-height-base: 1.5;
 //color
+$primary: #AA0601;
 $red: #AA0601; //bg-primary
 $white :#FFF;
 $brown: #650300; //text-primary , btn-hover
+$brown-300:#5F3E2D;
+$brown-100:#B75929;
 $pink: #FBF2F2; //背景粉
 $black: #000;
 $black-300: #212529;
 $gray: #707070;
-//grid
-$pad: 992px;
-$mobile: 767px;
+$gray-100: #DCDCDC;
+//
+$space: 4px;

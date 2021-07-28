@@ -1,0 +1,46 @@
+//margin
+.mb-24{
+    margin-bottom: 96px;
+}
+.mb-26{
+    margin-bottom: 104px;
+}
+.mb-40{
+    margin-bottom: 160px;
+}
+.mr-2{
+    margin-right: 8px;
+}
+.mb-md-24{
+    @include pad{
+        margin-bottom: 96px;
+    }
+}
+.mr-sm-1{
+    @include mobile{
+        margin-right: 4px;
+    }
+}
+
+$max: 20;
+@for $i from 1 through $max{
+    .mb-#{$i}{
+        margin-bottom: $i * $space;
+    }
+}
+
+@for $i from 1 through $max{
+    @include pad{
+        .mb-md-#{$i}{
+            margin-bottom: $i * $space;
+        }
+    }
+}
+
+@for $i from 1 through $max{
+    @include mobile{
+        .mb-sm-#{$i}{
+            margin-bottom: $i * $space;
+        }
+    }
+}

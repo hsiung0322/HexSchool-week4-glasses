@@ -1,15 +1,15 @@
 @mixin pc(){
-    @media(min-width: 992px){
+    @media (min-width: 992px){
         @content;
     }
 }
 @mixin pad(){
-    @media (max-width: $pad){
+    @media (max-width: 992px){
         @content;
     }
 }
 @mixin mobile(){
-    @media (max-width: $mobile){
+    @media (max-width: 767px){
         @content;
     }
 }

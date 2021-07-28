@@ -1,0 +1,155 @@
+.products{
+    //tabs
+    .tabs .active{
+        border-bottom: 8px solid $primary;
+    }
+    .tab{
+        width: 33.3%;
+        border: 1px solid $gray-100;
+        &:hover{
+            border-bottom: 8px solid $primary;
+        }
+        &-link{
+            padding: 24px 0;
+            @include pad{
+                padding: 14px 0;
+            }
+            @include mobile{
+                padding: 6px 0;
+            }
+        }
+        .icon{
+            font-size: $h2-font-size;
+            margin-right: 10px;
+            @include pad{
+                font-size: $font-size-m;
+            }
+            @include mobile{
+                margin-right: 0;
+                font-size: $font-size-base;
+            }
+        }
+        &-name{
+            font-size: $font-size-m;
+            @include pad{
+                font-size: $h4-font-size;
+            }
+            @include mobile{
+                font-size: $font-size-sm;
+                line-height: 1;
+            }
+        }
+    }
+    //banner
+    .banner-item{
+        width: 50%;
+        object-fit: cover;
+        max-height: 304px;
+        @include mobile{
+            display: none;
+        }
+    }
+    .banner-item-sm{
+        width: 50%;
+        object-fit: cover;
+        display: none;
+        @include mobile{
+            display: block;
+        }
+    }
+    //content
+    .title{
+        font-size: 2.625rem;
+        @include pad{
+            font-size: $font-size-m;
+        }
+        @include mobile{
+            font-size: $h5-font-size;
+        }
+    }
+    .subtitle{
+        font-size: $font-size-m;
+        @include pad{
+            font-size: $h4-font-size;
+        }
+        @include mobile{
+            font-size: $font-size-base;
+        }
+    }
+    .product-item-picture{
+        width: 100%;
+        height: 164px;
+        object-fit: cover;
+    }
+    .product-item-body{
+        font-size: $h4-font-size;
+        @include mobile{
+            font-size: $font-size-base;
+        }
+    }
+    .product-item-lg{
+        @include pad{
+            display: none;
+        }
+    }
+    .product-item-md{
+        @include mobile{
+            display: none;
+        }
+    }
+    .col-3{
+        width: 31.5%;
+    }
+    .col-4{
+        width: 23%;
+    }
+    .col-md-2{
+        @include pad{
+            width: 47.8%;
+        }
+    }
+    .col-sm-1{
+        @include mobile{
+            width: 100%;
+        }
+    }
+    /* ---------------- */
+    .color-box{
+        @include size(24px, 24px);
+        border-radius: 4px;
+        @include mobile{
+            @include size(16px, 16px);
+        }
+    }
+    .brown-300{
+        background: $brown-300;
+    }
+    .brown-100{
+        background: $brown-100;
+    }
+    //hide all but not first
+    .content>div:not(:first-child){
+        display: none;
+    }
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    &-item{
+        display: block;
+        color: $black;
+        padding: 12px 16px;
+        border: 1px solid lighten($black, 40%);
+        @include mobile{
+            padding: 12px;
+        }
+        &:hover{
+            color: $white;
+            background: $black;
+        }
+    }
+    .active{
+        color: $white;
+        background: $black;
+    }
+}
