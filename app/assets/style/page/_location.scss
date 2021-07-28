@@ -1,0 +1,99 @@
+.location{
+    padding-top: 96px;
+    padding-bottom: 128px;
+    @include pad{
+        padding-top: 60px;
+        padding-bottom: 76px;
+    }
+    @include mobile{
+        padding-top: 28px;
+        padding-bottom: 40px;
+    }
+    .title{
+        font-size: $h2-font-size;
+        padding-left: 16px;
+        border-left: 8px solid $primary;
+        @include pad{
+            border-width: 4px;
+        }
+        @include mobile{
+            font-size: 1.75rem;
+        }
+    }
+    .select-location{
+        label{
+            font-size: $h4-font-size;
+            @include pad{
+                font-size: $font-size-base;
+            }
+            @include mobile{
+                font-size: $font-size-sm;
+            }
+        }
+        select{
+            @include size(324px, 45px);
+            padding: 0 20px;
+            font-size: $font-size-base;
+            color: lighten($black, 45%);
+            @include pad{
+                width: 237px;
+                padding: 0 16px;
+            }
+            @include mobile{
+                @include size(277px, 36px);
+                font-size: $font-size-sm;
+            }
+        }
+    }
+    .location-list{
+        margin-left: -30px;
+    }
+    .location-item{
+        padding-left: 30px;
+    }
+    .location-photo{
+        width: 100%;
+        height: 224px;
+        object-fit: cover;
+        @include pad{
+            height: 164px;
+        }
+    }
+    .location-name{
+        font-size: $h4-font-size;
+        padding: 12px 24px;
+        border: 1px solid #00000020;
+        @include pad{
+            font-size: $font-size-base;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+    }
+    .location-infos{
+        border: 1px solid #00000020;
+        padding: 16px 24px;
+        i{
+            @include pad{
+                font-size: $h5-font-size;
+            }
+        }
+        p{
+            font-size: $h5-font-size;
+            @include pad{
+                font-size: $font-size-sm;
+            }
+        }
+    }
+    .detail{
+        font-size: $h5-font-size;
+        padding: 20px 0;
+        cursor: pointer;
+        @include pad{
+            font-size: $font-size-sm;
+            padding: 16px 0;
+        }
+        &:hover{
+            background: $primary;
+        }
+    }
+}

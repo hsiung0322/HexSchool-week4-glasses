@@ -97,22 +97,6 @@
             display: none;
         }
     }
-    .col-3{
-        width: 31.5%;
-    }
-    .col-4{
-        width: 23%;
-    }
-    .col-md-2{
-        @include pad{
-            width: 47.8%;
-        }
-    }
-    .col-sm-1{
-        @include mobile{
-            width: 100%;
-        }
-    }
     /* ---------------- */
     .color-box{
         @include size(24px, 24px);

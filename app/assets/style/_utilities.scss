@@ -8,6 +8,9 @@
 .mb-40{
     margin-bottom: 160px;
 }
+.mr-5{
+    margin-right: 20px;
+}
 .mr-2{
     margin-right: 8px;
 }
@@ -19,6 +22,11 @@
 .mr-sm-1{
     @include mobile{
         margin-right: 4px;
+    }
+}
+.mr-sm-3{
+    @include mobile{
+        margin-right: 12px;
     }
 }
 
