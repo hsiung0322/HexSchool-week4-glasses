@@ -1,4 +1,7 @@
 //margin
+.mb-3\.5{
+    margin-bottom: 14px;
+}
 .mb-24{
     margin-bottom: 96px;
 }
@@ -7,6 +10,9 @@
 }
 .mb-40{
     margin-bottom: 160px;
+}
+.mr-12{
+    margin-right: 48px;
 }
 .mr-5{
     margin-right: 20px;
@@ -31,13 +37,13 @@
 }
 
 $max: 20;
-@for $i from 1 through $max{
+@for $i from 0 through $max{
     .mb-#{$i}{
         margin-bottom: $i * $space;
     }
 }
 
-@for $i from 1 through $max{
+@for $i from 0 through $max{
     @include pad{
         .mb-md-#{$i}{
             margin-bottom: $i * $space;
@@ -45,7 +51,7 @@ $max: 20;
     }
 }
 
-@for $i from 1 through $max{
+@for $i from 0 through $max{
     @include mobile{
         .mb-sm-#{$i}{
             margin-bottom: $i * $space;

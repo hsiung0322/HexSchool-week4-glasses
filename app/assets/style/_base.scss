@@ -44,6 +44,9 @@ body{
     &-black{
         background: $black;
     }
+    &-dark{
+        background: $brown;
+    }
 }
 .btn{
     &-primary{

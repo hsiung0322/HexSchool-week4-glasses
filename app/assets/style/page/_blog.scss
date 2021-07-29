@@ -1,0 +1,97 @@
+.blog{
+    @include mobile{
+        padding-top: 18px;
+    }
+    .tabs{
+        @include mobile{
+            display: none;
+        }
+    }
+    .menu a{
+        padding: 12px 0;
+    }
+    .search-btn{
+        cursor: pointer;
+        font-size: 1.875rem;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+    .photo{
+        width: 57.2%;
+        object-fit: cover;
+        height: 400px;
+        @include pad{
+            width: 47.8%;
+            height: 208px;
+        }
+        @include mobile{
+            width: 100%;
+            height: 217px;
+        }
+    }
+    .post-body{
+        width: 40%;
+        @include pad{
+            width: 47%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+    }
+    .title{
+        font-size: $font-size-m;
+        @include pad{
+            font-size: $h5-font-size;
+        }
+        @include mobile{
+            font-size: $h6-font-size;
+        }
+    }
+    .subtitle{
+        font-size: $h5-font-size;
+        @include pad{
+            font-size: $h6-font-size;
+        }
+        @include mobile{
+            font-size: $font-size-sm;
+        }
+    }
+    .date{
+        color: lighten($black, 70);
+        @include pad{
+            font-size: $font-size-sm;
+        }
+        @include mobile{
+            color: $black
+        }
+    }
+    .content{
+        font-size: $h5-font-size;
+        @include pad{
+            display: none;
+        }
+        &-md{
+            display: none;
+            @include pad{
+                display: block;
+                font-size: $font-size-sm;
+            }
+            @include mobile{
+                display: none;
+            }
+        }
+    }
+    .more-btn{
+        font-size: $h3-font-size;
+        @include pad{
+            display: none;
+        }
+    }
+    .post-body:hover{
+        cursor: pointer;
+        .more-btn, .more-btn-md{
+            opacity: 0.5;
+        }
+    }
+}
