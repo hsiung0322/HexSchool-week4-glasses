@@ -58,6 +58,11 @@ body{
 .d-flex{
     display: flex;
 }
+.d-flex-md{
+    @include pad{
+        display: flex;
+    }
+}
 .flex-column{
     flex-direction: column;
 }

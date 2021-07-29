@@ -1,0 +1,51 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: store
+---
+
+<!-- location -- store -->
+<div class="location">
+    <div class="container">
+        <h2 class="title fw-700 mb-15 mb-md-10 mb-sm-6">門市據點</h2>
+        <div class="select-location d-flex align-item-center mb-8 mb-md-6 mb-sm-5">
+            <label for="store" class="mr-5 mr-sm-3">選擇分店</label>
+            <select name="store" id="store">
+                <option value="台北中山旗艦店">台北中山旗艦店</option>
+            </select>
+        </div>
+        <div class="store-content d-flex justify-content-between flex-wrap">
+            <div class="store-item d-flex-md">
+                <img src="./assets/images/locate1.jpeg" alt="locate1" class="location-photo">
+                <div class="location-body">
+                    <h3 class="location-name fw-md-700">台北中山旗艦店</h3>
+                    <ul class="location-infos">
+                        <li class="d-flex mb-2">
+                            <i class="material-icons-outlined mr-2">phone</i>
+                            <p>電話：(02)000-1234</p>
+                        </li>
+                        <li class="d-flex mb-2">
+                            <i class="material-icons-outlined mr-2">schedule</i>
+                            <p>營業時間：10:00-21:00</p>
+                        </li>
+                        <li class="d-flex mb-2">
+                            <i class="material-icons-outlined mr-2">place</i>
+                            <p>地址：台北市中山區南京東路</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="store-map">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0" 
+                    style="border:0" 
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDKY1TKPGtFKAFp5MDJBXv4r0XSS9-aZpU&q=台北市中山區南京東路" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
