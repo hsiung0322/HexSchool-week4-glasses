@@ -451,6 +451,10 @@ body {
   .fw-md-700 {
     font-weight: 700; } }
 
+@media (max-width: 992px) {
+  .fw-sm-400 {
+    font-weight: 400; } }
+
 .fw-900 {
   font-weight: 900; }
 
@@ -490,6 +494,17 @@ body {
 @media (max-width: 767px) {
   .col-sm-1 {
     width: 100%; } }
+
+.caption {
+  font-size: 3rem;
+  padding-left: 16px;
+  border-left: 8px solid #AA0601; }
+  @media (max-width: 992px) {
+    .caption {
+      border-width: 4px; } }
+  @media (max-width: 767px) {
+    .caption {
+      font-size: 1.75rem; } }
 
 .header {
   padding: 30px 88px; }
@@ -1058,16 +1073,6 @@ body {
     .location {
       padding-top: 28px;
       padding-bottom: 40px; } }
-  .location .title {
-    font-size: 3rem;
-    padding-left: 16px;
-    border-left: 8px solid #AA0601; }
-    @media (max-width: 992px) {
-      .location .title {
-        border-width: 4px; } }
-    @media (max-width: 767px) {
-      .location .title {
-        font-size: 1.75rem; } }
   .location .select-location label {
     font-size: 1.5rem; }
     @media (max-width: 992px) {
@@ -1168,5 +1173,52 @@ body {
       .location .store-map {
         width: 100%;
         height: 211px; } }
+
+.faq {
+  padding-top: 96px;
+  padding-bottom: 128px; }
+  @media (max-width: 992px) {
+    .faq {
+      padding-top: 60px;
+      padding-bottom: 72px; } }
+  @media (max-width: 767px) {
+    .faq {
+      padding-top: 28px;
+      padding-bottom: 26px; } }
+  .faq-title {
+    font-size: 2rem; }
+    @media (max-width: 767px) {
+      .faq-title {
+        font-size: 1.5rem; } }
+  .faq .question {
+    margin-bottom: 32px; }
+    @media (max-width: 992px) {
+      .faq .question {
+        margin-bottom: 24px; } }
+    @media (max-width: 767px) {
+      .faq .question {
+        margin-bottom: 20px; } }
+    .faq .question-title {
+      font-size: 1.25rem;
+      margin-bottom: 16px; }
+      @media (max-width: 767px) {
+        .faq .question-title {
+          font-size: 1rem;
+          margin-bottom: 8px; } }
+  .faq .answer {
+    padding-left: 8%;
+    padding-right: 8%; }
+    @media (max-width: 992px) {
+      .faq .answer {
+        padding-right: 0; } }
+    @media (max-width: 767px) {
+      .faq .answer {
+        display: none; } }
+  .faq .answer-sm {
+    display: none; }
+    @media (max-width: 767px) {
+      .faq .answer-sm {
+        display: block;
+        font-size: 0.875rem; } }
 
 /*# sourceMappingURL=all.css.map */
