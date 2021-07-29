@@ -131,6 +131,11 @@ body{
         font-weight: 700; //bold
     }
 }
+.fw-sm-400{
+    @include pad{
+        font-weight: 400; //regular
+    }
+}
 .fw-900{
     font-weight: 900; //black
 }
@@ -176,5 +181,17 @@ body{
 .col-sm-1{
     @include mobile{
         width: 100%;
+    }
+}
+
+.caption{
+    font-size: $h2-font-size;
+    padding-left: 16px;
+    border-left: 8px solid $primary;
+    @include pad{
+        border-width: 4px;
+    }
+    @include mobile{
+        font-size: 1.75rem;
     }
 }

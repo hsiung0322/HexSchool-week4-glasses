@@ -1,0 +1,52 @@
+.faq{
+    padding-top: 96px;
+    padding-bottom: 128px;
+    @include pad{
+        padding-top: 60px;
+        padding-bottom: 72px;
+    }
+    @include mobile{
+        padding-top: 28px;
+        padding-bottom: 26px;
+    }
+    &-title{
+        font-size: $font-size-m;
+        @include mobile{
+            font-size: $h4-font-size;
+        }
+    }
+    .question{
+        margin-bottom: 32px;
+        @include pad{
+            margin-bottom: 24px;
+        }
+        @include mobile{
+            margin-bottom: 20px;
+        }
+        &-title{
+            font-size: $h5-font-size;
+            margin-bottom: 16px;
+            @include mobile{
+                font-size: $font-size-base;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .answer{
+        padding-left: 8%;
+        padding-right: 8%;
+        @include pad{
+            padding-right: 0;
+        }
+        @include mobile{
+            display: none;
+        }
+    }
+    .answer-sm{
+        display: none;
+        @include mobile{
+            display: block;
+            font-size: $font-size-sm;
+        }
+    }
+}

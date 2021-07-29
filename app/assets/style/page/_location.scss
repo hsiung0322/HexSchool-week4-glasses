@@ -9,17 +9,6 @@
         padding-top: 28px;
         padding-bottom: 40px;
     }
-    .title{
-        font-size: $h2-font-size;
-        padding-left: 16px;
-        border-left: 8px solid $primary;
-        @include pad{
-            border-width: 4px;
-        }
-        @include mobile{
-            font-size: 1.75rem;
-        }
-    }
     .select-location{
         label{
             font-size: $h4-font-size;
