@@ -1,4 +1,9 @@
-//margin
+/* margin */
+//m0-auto
+.m0-auto{
+    margin: 0 auto;
+}
+//bottom
 .mb-3\.5{
     margin-bottom: 14px;
 }
@@ -11,18 +16,32 @@
 .mb-40{
     margin-bottom: 160px;
 }
+.mb-md-24{
+    @include pad{
+        margin-bottom: 96px;
+    }
+}
+//right
 .mr-12{
     margin-right: 48px;
 }
 .mr-5{
     margin-right: 20px;
 }
+.mr-3{
+    margin-right: 12px;
+}
 .mr-2{
     margin-right: 8px;
 }
-.mb-md-24{
+.mr-md-0{
     @include pad{
-        margin-bottom: 96px;
+        margin-right: 0;
+    }
+}
+.mr-md-2{
+    @include pad{
+        margin-right: 8;
     }
 }
 .mr-sm-1{
@@ -35,7 +54,7 @@
         margin-right: 12px;
     }
 }
-
+//for -> bottom 0~20
 $max: 20;
 @for $i from 0 through $max{
     .mb-#{$i}{
@@ -56,5 +75,179 @@ $max: 20;
         .mb-sm-#{$i}{
             margin-bottom: $i * $space;
         }
+    }
+}
+/* margin end */
+
+/* flex */
+//flex
+.d-flex{
+    display: flex;
+}
+.d-flex-md{
+    @include pad{
+        display: flex;
+    }
+}
+//direction
+.flex-column{
+    flex-direction: column;
+}
+.flex-sm-column{
+    @include mobile{
+        flex-direction: column;
+    }
+}
+.flex-lg-row-reverse{
+    @include pc{
+        flex-direction: row-reverse;
+    }
+}
+.flex-sm-row-reverse{
+    @include mobile{
+        flex-direction: row-reverse;
+    }
+}
+//justify-content
+.justify-content-end{
+    justify-content: flex-end;
+}
+.justify-content-lg-end{
+    @include pc{
+        justify-content: flex-end;
+    }
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-sm-center{
+    @include mobile{
+        justify-content: center;
+    }
+}
+//align-item
+.align-item-center{
+    align-items: center;
+}
+//flex-wrap
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-md-wrap{
+    @include pad{
+        flex-wrap: wrap;
+    }
+}
+/* flex end */
+
+/* color */ 
+.text{
+    &-primary{
+        color: $brown;
+    }
+    &-secondary{
+        color: $red;
+    }
+    &-date{
+        color: $gray;
+    }
+    &-white{
+        color: $white;
+    }
+    &-black{
+        color: $black;
+    }
+}
+.bg{
+    &-primary{
+        background: $red;
+    }
+    &-secondary{
+        background: $pink;
+    }
+    &-black{
+        background: $black;
+    }
+    &-dark{
+        background: $brown;
+    }
+}
+.btn{
+    &-primary{
+        background: $red;
+    }
+    &-primary-hover:hover{
+        background: $brown;
+    }
+}
+/* color  end*/ 
+
+/*border */
+.border-r-sm{
+    @include mobile{
+        border-right: 1px solid $white;
+    }
+}
+.border-b{
+    border-bottom: 1px solid $white;
+}
+/* border end */
+
+/* font */
+//text-align
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+//font weight -- regular:400, bold:700, black:900
+.fw-400{
+    font-weight: 400;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-900{
+    font-weight: 900;
+}
+.fw-sm-400{
+    @include pad{
+        font-weight: 400;
+    }
+}
+.fw-md-700{
+    @include pad{
+        font-weight: 700;
+    }
+}
+//font style
+.fs-italic{
+    font-style: italic;
+}
+/* font end */
+
+/* other */
+// 1:滿版(依父層), 2:雙欄, 3:三欄, 4:四欄
+.col-3{
+    width: 31.5%;
+}
+.col-4{
+    width: 23%;
+}
+.col-md-2{
+    @include pad{
+        width: 47.8%;
+    }
+}
+.col-sm-1{
+    @include mobile{
+        width: 100%;
     }
 }

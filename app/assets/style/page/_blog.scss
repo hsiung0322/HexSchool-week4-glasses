@@ -7,8 +7,18 @@
             display: none;
         }
     }
-    .menu a{
-        padding: 12px 0;
+    .submenu{
+        margin-left: -24px;
+        @include pad{
+            margin-left: -16px;
+        }
+        a{
+            padding: 12px 24px;
+            @include pad{
+                padding:12px 16px;
+                font-size: $h6-font-size;
+            }
+        }
     }
     .search-btn{
         cursor: pointer;
